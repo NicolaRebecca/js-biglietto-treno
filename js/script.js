@@ -7,15 +7,15 @@ var sconto65 = (prezzo * 40) / 100;
 
 
 if (age < 18) {
-    document.getElementById("result").innerHTML = parseInt(prezzo) - parseInt(sconto18) + " euro" ;
+    document.getElementById("result").innerHTML = Math.round(prezzo) - Math.round(sconto18) + " euro" ;
 } 
   
 else if (age > 65) {
-    document.getElementById("result").innerHTML += parseInt(prezzo) - parseInt(sconto65) + " euro";
+    document.getElementById("result").innerHTML += Math.round(prezzo) - Math.round(sconto65) + " euro";
 }
 
 else {
-    document.getElementById("result").innerHTML +=  prezzo + " euro";
+    document.getElementById("result").innerHTML +=  Math.round(prezzo) + " euro";
 }
 
 
